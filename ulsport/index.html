@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mój ulubiony sport</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="Fabikon — копия.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+                <div class="menu"><div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div><p id="menu1" class="menu1">MENU</p><p id="head1" class="head1"><a href="Ivan.html" >ㅤSPORTOWECㅤㅤ</a><a href="FILM.html">FILM</a></p></div>
+        </header>
+        <div class="block_1">
+            <p class="block_1_h">Czym jest Siatkowka?</p>
+            <p class="block_1_text">Siatkowka - sport drużynowy, w którym biorą udział dwa zespoły po 7 zawodników w każdym (rozgrywający, atakujący, dwóch środkowych i dwóch przyjmujących, libero). Na boisku przebywa jednak tylko sześciu zawodników, libero zmienia się ze środkowym będącym w linii obrony, gdy drużyna przyjmuje zagrywkę.</div>
+        <div class="block_3">
+            <p class="block_2_h">Glowne Zasady gry w Siatkówkę</p>
+            <p class="block_2_text">
+                <ul>
+                <li>Siatkówka polega na odbijaniu piłki dowolną częścią ciała (najczęściej rękoma) tak, aby przeleciała nad siatką i dotknęła połowy boiska należącej do przeciwnika.</li>
+                <li>Zespół może wykonać trzy odbicia – odbiór, wystawa i atak – każde następne jest błędem.</li>
+                <li>Punkty zdobywa się na wiele sposobów, na przykład, gdy piłka dotknie połowy boiska przeciwnika lub gdy upadnie ona poza boiskiem, a rywal dotknął jej jako ostatni.</li>
+                <li>Gra toczy się do momentu, gdy jedna z drużyn wygra 3 sety– w każdym z nich rywalizacja toczy się do zdobycia 25 punktów przy przewadze co najmniej dwóch punktów.</li>
+                </ul>
+            </p>
+        </div>
+        <script>
+            function myFunction(x) {
+              x.classList.toggle("change");
+              const heas2 = document.getElementById("menu1");
+              if (heas2.style.display == 'none') {
+                document.getElementById("menu1").style.display = "inline-block";}
+                else {
+                    document.getElementById("menu1").style.display = "none";
+                }
+              const heas1 = document.getElementById("head1");
+              if (heas1.style.display == 'inline-block') {
+                document.getElementById("head1").style.display = "none";}
+                else {
+                    document.getElementById("head1").style.display = "inline-block";
+                }
+                const heas3 = document.getElementById("head2");
+              if (heas3.style.display == 'inline-block') {
+                document.getElementById("head2").style.display = "none";}
+                else {
+                    document.getElementById("head2").style.display = "inline-block";
+                }
+            }
+            </script>
+    </body>
+</html>
