@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Fabikon — копия.png" type="image/x-icon">
+	<title>Madrid</title>
+	<link rel="stylesheet" href="MADRID.css">
+</head>
+<body>
+  <ul class="menu-main">
+  <li><a href="../Wakacje.html">Home</a></li>
+  <li><a href="../Maldives/MALDIVES.html" >Maldives</a></li>
+  <li><a href="MADRID.html" class="current">Madrid</a></li>
+  <li><a href="../Tokyo/Tokyo.html">Tokyo</a></li>
+</ul>
+  <section class="paralax">
+    <div class="container"></div>
+    <div class="golova"> Madrid </div>
+  </section>
+  <section class="abwak"> <div class="abtxt1"><p>Vacations in Madrid is..</p></div>
+  <div class="abtxt2"> <p>
+    Vacations in Madrid are a vibrant and dynamic experience.
+    As the capital of Spain, this cosmopolitan city seamlessly blends rich history with modern energy.
+    Explore world-class museums like the Prado or Thyssen-Bornemisza, housing masterpieces by renowned artists.
+    Stroll through picturesque parks like Retiro or enjoy the lively atmosphere of Plaza Mayor.
+    Indulge in delectable Spanish cuisine, from tapas to paella, and sample local delicacies.
+    Madrid also offers a thriving nightlife scene with trendy bars and clubs. Immerse yourself in the city's authentic charm,
+    characterized by stunning architecture, lively festivals, and warm hospitality. A vacation in Madrid promises an unforgettable blend of culture, art, and excitement.
+</p> </div>
+    <div class="abtxt3"><p> 3 most popular attractions: </p></div>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://images.musement.com/cover/0003/11/thumb_210294_cover_header.jpeg?&q=60&fit=crop" style="width:100%" height="600px">
+      <div class="text">The Royal Palace</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="madrid2.jpg" style="width:100%" height="600px">
+      <div class="text">Prado Museum</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="madrid4.jpg" style="width:100%" height="600px">
+      <div class="text">Palacio De Cibeles</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+<script> 
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+  </script>
+</section>
+  </body>
+</html>
