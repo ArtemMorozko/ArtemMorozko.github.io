@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Fabikon — копия.png" type="image/x-icon">
+	<title>Wakacje</title>
+	<link rel="stylesheet" href="Tokyo.css">
+</head>
+<ul class="menu-main">
+  <li><a href="../Wakacje.html" >Home</a></li>
+  <li><a href="../Maldives/MALDIVES.html">Maldives</a></li>
+  <li><a href="../Madrid/MADRID.html">Madrid</a></li>
+  <li><a href="Tokyo.html"class="current">Tokyo</a></li>
+</ul>
+<body>
+  <section class="paralax">
+    <div class="container"></div>
+    <div class="golova">Tokyo</div>
+  </section>
+  <section class="abwak"> <div class="abtxt1"><p>Vacations in Tokyo is..</p></div>
+  <div class="abtxt2"> <p>
+  Vacations in Tokyo are an exhilarating immersion into a vibrant metropolis that seamlessly blends tradition and modernity.
+  This bustling capital of Japan offers an endless array of experiences.
+  Explore the iconic landmarks like the Tokyo Tower and the historic Senso-ji Temple in Asakusa.
+  Indulge in world-class shopping in trendy districts such as Shibuya and Ginza, or immerse yourself in the electric atmosphere of Akihabara, known for its anime and gaming culture.
+  Sample delectable Japanese cuisine, from sushi and ramen to street food delights. Tokyo's efficient public transportation system makes it easy to navigate and discover its diverse neighborhoods.
+  A vacation in Tokyo promises a captivating fusion of ancient traditions and futuristic innovation.
+  </p> </div>
+  <div class="abtxt3"><p></p></div>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Tokyo1.jpg" style="width:100%" height="600px">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="Tokyo3.jpg" style="width:100%" height="600px">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="Tokyo 4.jpg" style="width:100%" height="600px">
+      <div class="text"></div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+<script> 
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+  </script>
+</section>
+  </body>
+</html>
